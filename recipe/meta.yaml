@@ -1,5 +1,5 @@
 {% set name = "py-solc-x" %}
-{% set version = "2.0.4" %}
+{% set version = "2.0.5" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/py-solc-x-{{ version }}.tar.gz
-  sha256: 6f6f7f47c8520bde73679624568ec343db9baca6914212b371896fad8697deca
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 2d8440d2be8a5577137fb2313ee211b5b35f36c4c922f274192d34f401616e83
 
 build:
   number: 0
